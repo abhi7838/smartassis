@@ -9,35 +9,34 @@ import os
 pyttsx3.speak('welcome to the computer you can interact with this by typping numbers of programme name itself')
 
 while True:
-    print("if you want app suggestions then type yes otherwise type  name of the programme which you want to execute")
     #print("do you want app suggestion to run")
-    a = input()
+    a = input("If you want app suggestions then type yes otherwise type  name of the programme which you want to execute").lower()
     if ('yes' in a) or ('yeah' in a) or ('y' in a ):
         # web browsing app
         print('**********web browsing apps**********')
         print("1. chrome")
         print("2. internet explorer")
         print('\n')
-        
-        
+
+
         print("**********editors*********** ")
         print("3. arduino")
         print("4. notepad")
         print('5. pycharm')
         print('\n')
 
-        
-        
-        
+
+
+
         print("**********media player**********")
         print("6. mspalyer")
         print('\n')
-        
+
         print("**********paint**********")
         print("6. paint")
-        
-        
-        
+
+
+
     if ('run' in a) and  (('chrome' in a) or ('goolgle chrome' in a)):
         os.system('chrome')
         print('chrome is started')
@@ -61,12 +60,12 @@ while True:
     elif("don't run" in a):
         print("please make a choice to run from the following program")
         print("if you want to exit from the menu then print type exit")
-        
+
         print('**********web browsing apps**********')
         print("1. chrome")
         print("2. internet explorer")
         print('\n')
-        
+
         print("**********editors*********** ")
         print("3. arduino")
         print("4. notepad")
@@ -76,11 +75,8 @@ while True:
         print("**********media player**********")
         print("6. mspalyer")
         print('\n')
-        
+
         print("**********paint**********")
         print("6. paint")
     elif("exit" in a) or ('stop' in a) or ('end' in a):
         exit()
-        
-        
-
